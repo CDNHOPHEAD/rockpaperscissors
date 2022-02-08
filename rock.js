@@ -1,3 +1,26 @@
+const selectionButtons = document.querySelectorAll('[data-selection]')
+
+selectionButtons.forEach(selectionButtons=> {
+    selectionButtons.addEventListener('click', e => {
+        const selectionName = selectionButton.dataset.selection
+        makeSelection(selectionName)
+    })
+})
+
+function makeSelection(selection){
+    console.log(selection)
+}
+
+
+
+
+
+
+
+
+
+
+
 
 //Set Player score to zero
 let playerscore = 0;
@@ -5,9 +28,9 @@ let playerscore = 0;
 let computerscore =0;
 
 //Continue to play game until Player score is 5 or Computer score is 5 or both
-while(playerscore < 5 && computerscore <5 ){
-    let playerSelection =prompt("Choose rock, paper or scissors: ");
-    console.log( "Player selection:", playerSelection);
+//while(playerscore < 5 && computerscore <5 ){
+   // let playerSelection =prompt("Choose rock, paper or scissors: ");
+   // console.log( "Player selection:", playerSelection);
 
     let playerOne = playerSelection.trim().toLowerCase();
           if(playerOne === "rock" || playerOne === "paper" || playerOne === "scissors"){
@@ -92,9 +115,9 @@ while(playerscore < 5 && computerscore <5 ){
             console.log("Tie!");
         }
 // Print updated score
-console.log("Player score: ", playerscore);
+
 console.log ("A.I score: " , computerscore);
-}
+
 
 
     //If player score= 5 

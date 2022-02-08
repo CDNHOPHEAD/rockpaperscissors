@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(10, 10, 10);
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    padding: 40px;
+}
+button{
+    padding: 0;
+    background: none;
+    border-width: 10px;
+    cursor: pointer;
+    transition: 100ms;
+    
+}
+button:hover{
+    transform: scale(1.1);
+}
+.results{
+    margin-top: 1rem;
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    color: rgb(14, 238, 14);
+    font-size: 2rem;
+    gap:100px;
+}
+.result-score{
+    margin-left:0.1rem;
+    font-size: 1.5rem;
+    color: rgb(14, 238, 14);
+  
+}
+.result-selection{
+    opacity: 0.5;
+
+}
+.result-selection.winner{
+    opacity: 1;
+}
